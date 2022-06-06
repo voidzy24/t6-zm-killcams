@@ -347,7 +347,7 @@ init_player_hitmarkers()
 updatedamagefeedback(mod, inflictor, death) //checked matches cerberus output
 {
     if (!isplayer(self) || isdefined(self.disable_hitmarkers)) return;
-    if (isdefined(mod) && mod != "MOD_CRUSH" && mod != "MOD_GRENADE_SPLASH" && mod != "MOD_HIT_BY_OBJECT")
+    if (isdefined(mod) && mod != "MOD_CRUSH" /*&& mod != "MOD_GRENADE_SPLASH" */&& mod != "MOD_HIT_BY_OBJECT") //removing this bit enables the player to trickshot with a ray gun
     {
         self.hud_damagefeedback setshader("damage_feedback", 24, 48);
         self.hud_damagefeedback.alpha = 1;
