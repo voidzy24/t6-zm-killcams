@@ -838,6 +838,7 @@ CreateMenu()
         self add_option("teleport", "cool farm spot #2", ::teleportPlayer, (8211.21, -3589.19, 642.349), (0, -120.462, 0));
         self add_option("teleport", "road spot", ::teleportPlayer, (-9439.18, -6810.59, 576.125), (0, -120.462, 0));
         self add_option("teleport", "tree spot", ::teleportPlayer, (5932.1, 7440.97, 1022.26), (0, 61.7558, 0));
+				self add_option("teleport", "nacht der untoten", ::teleportPlayer, (13684.9, -768.001, 104.129), (0, 177.874, 0));
 
         // base / copy
         self add_option("teleport", "pack a punch", ::teleportPlayer, (1946, -183, -303), (0, -93.3551, 0));
