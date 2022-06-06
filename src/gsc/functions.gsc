@@ -761,11 +761,12 @@ formatLocal(name)
 
 UpgradeWeapon()
 {
+		weap = self getCurrentWeapon();
     baseweapon = get_base_name(self getcurrentweapon());
     weapon = get_upgrade(baseweapon);
     if (isdefined(weapon))
     {
-        self takeweapon(baseweapon);
+        self takeweapon(weap);
         self giveweapon(weapon, 0, self get_pack_a_punch_weapon_options(weapon));
         self switchtoweapon(weapon);
         self givemaxammo(weapon);
